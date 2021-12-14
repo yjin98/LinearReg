@@ -17,8 +17,11 @@ int main()
     color[2] = 0;
 
     for (int i = 0; i < 2; i++) {
+    
+        //Use random x and y as an example
         x.push_back(rand() % 800);
         y.push_back(0.5 * x[i] + rand() % 100 - 50);
+        
         cv::circle(IG1, cv::Point(x[i] + 100, 600 - y[i]), 2, cv::Scalar(0, 255, 0), -100);
 
         n = n + 1;
